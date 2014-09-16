@@ -1,0 +1,21 @@
+<html ng-app="angularTask">
+<head>
+    <title>Angular task #1</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular.min.js"></script>
+    <script src="core.js"></script>
+</head>
+<body> 
+	<div ng-controller="TimerController">
+	
+	<h1> Angular task #1 </h1>
+
+	Aktualny czas to : {{ currentTimestamp | date:'yyyy-MM-dd HH:mm:ss' }} 
+
+	</div>  
+
+	 Aktualny czas to : <span my-current-time="format" ng-filter="date:yyyy-MM-dd HH:mm:ss"></span>
+</body>
+</html>
